@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+   
+}
+.container{
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 8rem 1fr;
+    grid-template-areas:
+    "nav header" 
+    "nav" "main";
+}
+.nav{
+    background-color: blue;
+grid-area: nav;
+}
+.header{
+    background-color: red;
+grid-area: header;
+}
+.main{
+    background-color: lightgray;
+    grid-area: main;
+}
